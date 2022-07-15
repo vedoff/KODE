@@ -10,6 +10,8 @@
    добавлять 1 в файл test.log
 ### Тестировал с использованием Vagrant оставил полный вариант.
 ## №1
-
+`cd Ansible && ansible-playbook play.yml --ask-vault-pass`\
+`vault-pass = 123456`\
+Пароли на пользователей `123456`
 
 
