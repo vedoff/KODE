@@ -1,4 +1,5 @@
-## Установка пакетов нв Debian (стандартная установка)
+# Пример №1
+## Установка пакетов на Debian
 - name: app install Debian
   apt:
     name:
@@ -10,7 +11,8 @@
     update_cache: yes
   when: ansible_os_family == "Debian"
 
-## Установка пакетов на Centos (установка с спользованием цикла)
+# Пример №2
+## Установка пакетов на Centos
 - name: app install Centos
   yum:
     name: '{{ item }}'
