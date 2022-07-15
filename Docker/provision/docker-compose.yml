@@ -1,0 +1,9 @@
+version: '3'
+services:
+# Разворачиваем контейнер
+  cron:
+    build: ./cron
+    container_name: cron
+    # Проецируем ресурсы с хоста 
+    volumes:
+      - ./rlog/:/data

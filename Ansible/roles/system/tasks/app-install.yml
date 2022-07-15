@@ -1,0 +1,21 @@
+## Установка пакетов нв Debian (стандартная установка)
+- name: app install Debian
+  apt:
+    name:
+      - curl
+      - wget
+      - htop
+      - sudo
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+## Установка пакетов на Centos (установка с спользованием цикла)
+- name: app install Centos
+  yum:
+    name: '{{ item }}'
+    state: present
+    update_cache: yes
+  loop: 
+    - '{{ packages }}'
+  when: ansible_os_family == "RedHat"

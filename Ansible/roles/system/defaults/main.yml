@@ -1,0 +1,6 @@
+---
+# defaults file for system
+packages:
+  - curl
+  - htop
+  - wget

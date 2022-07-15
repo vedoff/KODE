@@ -1,0 +1,24 @@
+# Добавление пользователей в систему
+## Добавление пользователей в Debian
+- name: add Administration users Debian
+  user:
+    name: '{{ item.user }}'
+    password: '{{ item.password }}'
+    comment: Administration user
+    uid: '{{ item.uid }}'
+    groups: sudo
+  with_items:
+    - "{{ add_user }}"
+  when: ansible_os_family == "Debian"
+
+## Добавление пользователей в Centos
+- name: add Administration users Centos
+  user:
+    name: '{{ item.user }}'
+    password: '{{ item.password }}'
+    comment: Administration user
+    uid: '{{ item.uid }}'
+    groups: wheel
+  with_items:
+    - "{{add_user}}"
+  when: ansible_os_family == "RedHat"

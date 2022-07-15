@@ -1,0 +1,9 @@
+---
+# tasks file for system
+- name: app-install
+  import_tasks: app-install.yml
+  tags: app
+
+- name: add-users
+  import_tasks: add-users.yml
+  tags: users
