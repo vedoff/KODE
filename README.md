@@ -13,5 +13,8 @@
 `cd Ansible && ansible-playbook play.yml --ask-vault-pass`\
 `vault-pass = 123456`\
 Пароли на пользователей `123456`
-
+## №2
+Можно запустить при помощи Vagrant или скопировать содержимое папки provision на хост \
+запустить скрипт установки docker docker-compose и выполнить
+`docker-compose up -d`
 
