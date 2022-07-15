@@ -16,5 +16,6 @@
 ## №2
 Можно запустить при помощи Vagrant или скопировать содержимое папки provision на хост \
 запустить скрипт установки docker docker-compose и выполнить \
-`docker-compose up -d`
+`docker-compose up -d` 
 
+[Ссылка на референс](https://ivan.bessarabov.ru/blog/how-to-run-cron-in-docker)
